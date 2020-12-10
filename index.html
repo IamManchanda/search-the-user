@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search the User App | VanillaJS</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Template | VanillaJS</title>
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css2?family=Piazzolla&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css" />
-</head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h4 class="title">Search the User</h4>
+        <small class="subtitle">Search by name and/or location</small>
+        <input type="text" id="filter" placeholder="Search" />
+      </header>
 
-<body>
-  <script src="js/script.js"></script>
-</body>
+      <ul id="result" class="user-list">
+        <li>
+          <h3>Loading...</h3>
+        </li>
+      </ul>
+    </div>
 
+    <script src="js/script.js"></script>
+  </body>
 </html>
